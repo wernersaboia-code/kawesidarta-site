@@ -1,3 +1,7 @@
+'use client'; // Adicione no topo do arquivo
+
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 export default function FooterKawêFinal() {
   return (
     <footer className="py-12 px-6 bg-[#2c3e50] text-white">
@@ -10,7 +14,7 @@ export default function FooterKawêFinal() {
                 <img
                   src="/logo.jpg"
                   alt="Logo Kawê"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain scale 125"
                 />
               </div>
             </div>
@@ -20,23 +24,26 @@ export default function FooterKawêFinal() {
             </h2>
           </div>
 
-          {/* Redes sociais */}
+          {/* Redes sociais COM LOGOS OFICIAIS */}
           <div className="flex justify-center gap-6 mb-8">
             <a
               href="https://instagram.com/kawesidartamassoterapeuta"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-gradient-to-r from-[#ff8ba7] to-[#ff6b8b] flex items-center justify-center hover:scale-110 transition-transform"
+              className="w-14 h-14 rounded-full bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] flex items-center justify-center hover:scale-110 transition-transform shadow-lg hover:shadow-xl group"
+              aria-label="Instagram"
             >
-              <span className="text-xl">📷</span>
+              <FaInstagram className="w-7 h-7 text-white group-hover:scale-110 transition-transform" />
             </a>
+
             <a
               href="https://wa.me/556196084063"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center hover:scale-110 transition-transform"
+              className="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform shadow-lg hover:shadow-xl group"
+              aria-label="WhatsApp"
             >
-              <span className="text-xl">💬</span>
+              <FaWhatsapp className="w-8 h-8 text-white group-hover:scale-110 transition-transform" />
             </a>
           </div>
 

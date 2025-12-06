@@ -59,28 +59,7 @@ export default function ServicosKawêFinal() {
             </div>
           ))}
         </div>
-
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <div className="max-w-2xl mx-auto kawê-card bg-gradient-to-r from-[#ccedf8]/20 to-[#ff8ba7]/10">
-            <h3 className="text-2xl font-bold text-[#2c3e50] mb-4">
-              Não sabe qual escolher?
-            </h3>
-            <p className="text-[#2c3e50]/70 mb-6">
-              Me conta sobre suas necessidades e te ajudo a encontrar a terapia perfeita!
-            </p>
-            <a
-              href="https://wa.me/556196084063"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#ff8ba7] text-white font-bold text-lg hover:bg-[#ff6b8b] transition-colors shadow-lg hover:shadow-xl"
-            >
-              <span>💬</span>
-              Me chama no WhatsApp
-            </a>
-          </div>
         </div>
-      </div>
     </section>
   );
 }

@@ -1,3 +1,7 @@
+'use client';
+
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
+
 export default function HeroKawêFinal() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden kawê-gradient-bg">
@@ -14,16 +18,13 @@ export default function HeroKawêFinal() {
           </span>
         </div>
 
-        {/* Foto de perfil (circular) */}
+        {/* Logo */}
         <div className="w-52 h-52 rounded-full border-4 border-white shadow-2xl overflow-hidden mx-auto mb-8 bg-white">
-          <div className="w-full h-full p-0.5"> {/* QUASE zero padding */}
+          <div className="w-full h-full p-0.5">
             <img
               src="/logo.jpg"
               alt="Kawê Sidarta - Logo"
-              className="w-full h-full object-contain scale-150"
-              style={{
-                transform: 'scale(1.1)', /* CSS puro funciona melhor */
-              }}
+              className="w-full h-full object-contain scale-110"
             />
           </div>
         </div>
@@ -75,18 +76,23 @@ export default function HeroKawêFinal() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://instagram.com/kaewsidartamassoterapia"
+              href="https://instagram.com/kawesidartamassoterapeuta"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#ff8ba7] to-[#ff6b8b] text-white text-sm font-medium"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white text-sm font-medium hover:shadow-md transition-shadow"
             >
-              <span>📷</span>
-              @kaewsidartamassoterapia
+              <FaInstagram className="w-4 h-4" />
+              @kawesidartamassoterapeuta
             </a>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#ccedf8] text-[#2c3e50] text-sm font-medium">
-              <span>📞</span>
+            <a
+              href="https://wa.me/556196084063"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:shadow-md transition-shadow"
+            >
+              <FaWhatsapp className="w-4 h-4" />
               (61) 9608-4063
-            </div>
+            </a>
           </div>
         </div>
       </div>
