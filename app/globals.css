@@ -1,26 +1,83 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* Cores customizadas do Kawê */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --kawê-primary: #ccedf8;
+    --kawê-dark: #8bcae8;
+    --kawê-accent: #ff8ba7;
+    --kawê-text: #2c3e50;
+    --kawê-light: #f8fdff;
   }
 }
 
+/* Componentes customizados */
+@layer components {
+  .kawê-card {
+    @apply bg-white rounded-3xl p-6 shadow-lg border border-[#ccedf8]/30
+           hover:shadow-xl hover:border-[#8bcae8]/50 transition-all duration-300;
+  }
+
+  .kawê-btn {
+    @apply bg-[#ccedf8] text-[#2c3e50] font-semibold py-3 px-6 rounded-full
+           border border-[#8bcae8] hover:bg-[#8bcae8] hover:text-white
+           transition-colors duration-300 shadow-sm hover:shadow-md;
+  }
+
+  .kawê-btn-accent {
+    @apply bg-[#ff8ba7] text-white font-semibold py-3 px-6 rounded-full
+           hover:bg-[#ff6b8b] transition-colors duration-300
+           shadow-sm hover:shadow-md;
+  }
+
+  .kawê-gradient-bg {
+    @apply bg-gradient-to-br from-[#f8fdff] via-[#ccedf8]/30 to-[#f8fdff];
+  }
+}
+
+/* Animações */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Utilitários */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-[#2c3e50] bg-[#f8fdff];
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#ccedf8]/20;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#8bcae8] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#6bb4d8];
 }
