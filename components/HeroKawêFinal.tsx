@@ -51,7 +51,7 @@ export default function HeroKawêFinal() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="https://wa.me/556196084063"
+            href="https://wa.me/5561996084063"
             target="_blank"
             rel="noopener noreferrer"
             className="kawê-btn-accent px-8 py-4 text-lg font-bold flex items-center gap-3"
@@ -85,13 +85,13 @@ export default function HeroKawêFinal() {
               @kawesidartamassoterapeuta
             </a>
             <a
-              href="https://wa.me/556196084063"
+              href="https://wa.me/5561996084063"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:shadow-md transition-shadow"
             >
               <FaWhatsapp className="w-4 h-4" />
-              (61) 9608-4063
+              (61) 99608-4063
             </a>
           </div>
         </div>

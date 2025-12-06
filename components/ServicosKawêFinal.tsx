@@ -1,5 +1,5 @@
 const servicos = [
-  { icone: '🔥', nome: 'Pedras Quentes', desc: 'Relaxamento profundo com pedras basálticas aquecidas' },
+  { icone: '🌋', nome: 'Pedras Vulcânicas', desc: 'Pedras basálticas aquecidas que liberam calor terapêutico e energético' },
   { icone: '🍶', nome: 'Ventosaterapia', desc: 'Técnica milenar para liberação de tensões' },
   { icone: '💆', nome: 'Massagem Relaxante', desc: 'Alívio do estresse e renovação energética' },
   { icone: '💫', nome: 'Dreno Modeladora', desc: 'Ativação da circulação e redução de inchaço' },
@@ -8,7 +8,7 @@ const servicos = [
   { icone: '🦶', nome: 'Massagem nos Pés', desc: 'Reflexologia podal para equilíbrio total' },
   { icone: '🦵', nome: 'Massagem nas Pernas', desc: 'Alívio para pernas cansadas e pesadas' },
   // NOVAS MASSAGENS:
-  { icone: '🌸', nome: 'Massagem Tântrica', desc: 'Técnica que trabalha energia e conexão corporal' },
+  { icone: '🪷', nome: 'Massagem Tântrica', desc: 'Técnica que trabalha energia e conexão corporal' },
   { icone: '👐', nome: 'Massagem 4 Mãos', desc: 'Dupla de terapeutas para relaxamento intenso' },
   { icone: '🎨', nome: 'Mix de Massagens', desc: 'Combinação personalizada de várias técnicas' },
 ];
