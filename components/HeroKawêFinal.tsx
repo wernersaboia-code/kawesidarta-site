@@ -16,13 +16,13 @@ export default function HeroKawêFinal() {
 
         {/* Foto de perfil (circular) */}
         <div className="w-52 h-52 rounded-full border-4 border-white shadow-2xl overflow-hidden mx-auto mb-8 bg-white">
-          <div className="w-full h-full p-1">
+          <div className="w-full h-full p-0.5"> {/* QUASE zero padding */}
             <img
               src="/logo.jpg"
               alt="Kawê Sidarta - Logo"
-              className="w-full h-full object-contain scale-125"
+              className="w-full h-full object-contain scale-150"
               style={{
-                filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.1))', /* Suaviza bordas */
+                transform: 'scale(1.1)', /* CSS puro funciona melhor */
               }}
             />
           </div>
