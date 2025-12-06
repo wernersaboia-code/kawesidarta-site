@@ -2,9 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Inter, Playfair_Display } from 'next/font/google';
 
-export const metadata: Metadata = {
-  title: 'Massagista Espiritual | Portfolio',
-  description: 'Harmonia para corpo, mente e alma através de toques zen.',
+export const metadata = {
+  title: 'Kawê Sidarta | Massoterapeuta Holístico',
+  description: 'Massoterapia personalizada em Brasília. Pedras quentes, ventosaterapia, massagem tântrica e mais. Agende pelo WhatsApp!',
+  openGraph: {
+    images: ['/logo.jpg'],
+  },
 };
 
 const inter = Inter({ subsets: ['latin'] });

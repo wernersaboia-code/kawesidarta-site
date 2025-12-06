@@ -23,7 +23,7 @@ export default function FooterKawêFinal() {
           {/* Redes sociais */}
           <div className="flex justify-center gap-6 mb-8">
             <a
-              href="https://instagram.com/kaewsidartamassoterapia"
+              href="https://instagram.com/kawesidartamassoterapeuta"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-gradient-to-r from-[#ff8ba7] to-[#ff6b8b] flex items-center justify-center hover:scale-110 transition-transform"
